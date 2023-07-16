@@ -1,0 +1,6 @@
+framework module Pods_RememberViewCode {
+  umbrella header "Pods-RememberViewCode-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_RememberViewCode_RememberViewCodeUITests {
+  umbrella header "Pods-RememberViewCode-RememberViewCodeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
