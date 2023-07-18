@@ -10,6 +10,7 @@
 		0749ED1132D90228B841D181 /* Pods_RememberViewCode_RememberViewCodeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F06B672CEC87270D29BE987 /* Pods_RememberViewCode_RememberViewCodeUITests.framework */; };
 		3BD4CBB783B7A3C98BEEFE14 /* Pods_RememberViewCodeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAD7504D81DC5876A5D9AC8 /* Pods_RememberViewCodeTests.framework */; };
 		81988401A82431F92F8867FA /* Pods_RememberViewCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDCB9893801D084F4CFE68E /* Pods_RememberViewCode.framework */; };
+		A41269612A64A3740017A45D /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41269602A64A3740017A45D /* KeyboardManager.swift */; };
 		A41D70FC2A50B02E00E889C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D70FB2A50B02E00E889C1 /* AppDelegate.swift */; };
 		A41D70FE2A50B02E00E889C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D70FD2A50B02E00E889C1 /* SceneDelegate.swift */; };
 		A41D71002A50B02E00E889C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D70FF2A50B02E00E889C1 /* ViewController.swift */; };
@@ -50,6 +51,7 @@
 		6C2D6F6F793E45B809271E02 /* Pods-RememberViewCode-RememberViewCodeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RememberViewCode-RememberViewCodeUITests.debug.xcconfig"; path = "Target Support Files/Pods-RememberViewCode-RememberViewCodeUITests/Pods-RememberViewCode-RememberViewCodeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6EAD7504D81DC5876A5D9AC8 /* Pods_RememberViewCodeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RememberViewCodeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7970126AE972CFD61BF0698B /* Pods-RememberViewCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RememberViewCode.debug.xcconfig"; path = "Target Support Files/Pods-RememberViewCode/Pods-RememberViewCode.debug.xcconfig"; sourceTree = "<group>"; };
+		A41269602A64A3740017A45D /* KeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
 		A41D70F82A50B02E00E889C1 /* RememberViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RememberViewCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A41D70FB2A50B02E00E889C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A41D70FD2A50B02E00E889C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A412695F2A64A3650017A45D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A41269602A64A3740017A45D /* KeyboardManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		A41D70EF2A50B02E00E889C1 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +159,7 @@
 		A41D70FA2A50B02E00E889C1 /* RememberViewCode */ = {
 			isa = PBXGroup;
 			children = (
+				A412695F2A64A3650017A45D /* Managers */,
 				A41D70FB2A50B02E00E889C1 /* AppDelegate.swift */,
 				A41D70FD2A50B02E00E889C1 /* SceneDelegate.swift */,
 				A41D70FF2A50B02E00E889C1 /* ViewController.swift */,
@@ -422,6 +433,7 @@
 			files = (
 				A41D71002A50B02E00E889C1 /* ViewController.swift in Sources */,
 				A4C2EFE92A6475300007866F /* ViewControllerCoordinator.swift in Sources */,
+				A41269612A64A3740017A45D /* KeyboardManager.swift in Sources */,
 				A4D25A2F2A64783200553DED /* ViewControllerDataStore.swift in Sources */,
 				A4C2EFE72A6474AD0007866F /* ViewControllerInitializer.swift in Sources */,
 				A41FD7602A510426001C360B /* ViewControllerView.swift in Sources */,

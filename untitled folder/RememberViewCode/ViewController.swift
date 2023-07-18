@@ -5,7 +5,9 @@ class ViewController: UIViewController {
     private let customView: ViewControllerViewProtocol
     private let interactor: ViewControllerInteractorProtocol
     
-    init(customView: ViewControllerViewProtocol, interactor: ViewControllerInteractorProtocol) {
+    init(customView: ViewControllerViewProtocol,
+         interactor: ViewControllerInteractorProtocol)
+    {
         self.customView = customView
         self.interactor = interactor
         super.init(nibName: nil, bundle: nil)
@@ -21,6 +23,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        interactor.viewDidLoad(viewController: self)
     }
 }
 

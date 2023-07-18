@@ -1,11 +1,13 @@
 import UIKit
 
 protocol ViewControllerInteractorProtocol {
-    func viewDidLoad()
+    func viewDidLoad(viewController: UIViewController)
 }
 
 final class ViewControllerInteractor: ViewControllerInteractorProtocol {
     
+    private var keyboardDismissManager: KeyboardManager?
+        
     private let coordinator: ViewControllerCoordinatorProtocol
     private let dataStore: ViewControllerDataStoreProtocol
     private let presenter: ViewControllerPresenterProtocol
@@ -19,8 +21,10 @@ final class ViewControllerInteractor: ViewControllerInteractorProtocol {
         self.presenter = presenter
     }
     
-    func viewDidLoad()
+    func viewDidLoad(viewController: UIViewController)
     {
         presenter.presentContent()
+        keyboardDismissManager = KeyboardManager(viewController: viewController)
+        keyboardDismissManager?.startMonitoring()
     }
 }
